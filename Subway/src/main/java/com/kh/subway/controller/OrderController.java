@@ -60,7 +60,13 @@ public class OrderController extends HttpServlet {
 		//System.out.println(order);
 
 		// 3) 요청 처리
-		new SubwayService().insertOrder(order);
+		int result = new SubwayService().insertOrder(order);
+
+		if(result > 0) {
+			response.getWriter().append("succes~ ;)");
+		} else {
+			response.getWriter().append("fail ;ㅆ;");
+		}
 
 	}
 

@@ -30,6 +30,7 @@
 	</environments>
 
 	<mappers>
+		<mapper resource="/mapper/order-mapper.xml"/>
 	</mappers>
 
 
