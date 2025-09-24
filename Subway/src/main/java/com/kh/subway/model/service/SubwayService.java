@@ -1,5 +1,7 @@
 package com.kh.subway.model.service;
 
+import java.util.List;
+
 import org.apache.ibatis.session.SqlSession;
 
 import com.kh.subway.common.Template;
@@ -24,6 +26,21 @@ public class SubwayService {
 
 		return result;
 
+	}
+
+	public List<Subway> findAll() {
+
+		SqlSession session = Template.getSqlSession();
+
+		List<Subway> subway = sd.findAll(session);
+
+		/*
+		if(subway != null) {
+		session.commit();
+		}*/
+		session.close();
+
+		return subway;
 	}
 
 }
