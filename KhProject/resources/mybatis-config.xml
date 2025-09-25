@@ -12,25 +12,28 @@
 	</settings>
 
 	<typeAliases>
-	</typeAliases>
+    <typeAlias alias="member" type="com.kh.java.member.model.vo.Member"/>
+    </typeAliases>
 
 	<environments default="development">
 		<environment id="development">
 
-			<transactionManager type="JDBC"/>
+			<transactionManager type="JDBC" />
 
 			<dataSource type="UNPOOLED">
-				<property name="driver" value="oracle.jdbc.driver.OracleDriver"/>
-				<property name="url" value="jdbc:oracle:thin:@115.90.212.20:10000:XE"/>
-				<property name="username" value="BJG12"/>
-				<property name="password" value="BJG121234"/>
+				<property name="driver"
+					value="oracle.jdbc.driver.OracleDriver" />
+				<property name="url"
+					value="jdbc:oracle:thin:@115.90.212.20:10000:XE" />
+				<property name="username" value="BJG12" />
+				<property name="password" value="BJG121234" />
 
 			</dataSource>
 		</environment>
 	</environments>
 
 	<mappers>
-		<mapper resource="/mapper/member-mapper.xml"/>
+		<mapper resource="/mapper/member-mapper.xml" />
 	</mappers>
 
 
