@@ -15,7 +15,7 @@ public class Template {
 
 		String config = "/mybatis-config.xml";
 
-		// /는 모든 src폴더의 최상위 폴더라는 으미(classes)
+		// /는 모든 src폴더의 최상위 폴더라는 의미(classes)
 
 		try {
 			InputStream stream = Resources.getResourceAsStream(config);
