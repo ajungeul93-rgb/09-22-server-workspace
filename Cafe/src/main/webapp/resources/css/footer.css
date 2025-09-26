@@ -1,0 +1,53 @@
+footer {
+    background-color: #e0a449;
+    min-height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 15px 30px;
+    box-sizing: border-box;
+    border-top: 1px solid var(--box-border-color); /* 상단 테두리 */
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.05); /* 하단 그림자 */
+    color: #555; /* 푸터 기본 텍스트 색상 */
+}
+
+footer > div {
+    border: none;
+}
+
+#footer1 p {
+    margin: 3px 0;
+    font-size: 13px;
+    color: #555;
+    line-height: 1.4; /* 줄 간격 조절 */
+}
+
+#footer2 ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0 0 8px 0;
+    justify-content: flex-end;
+}
+
+#footer2 a {
+    text-decoration: none;
+    color: #555;
+    font-size: 13px;
+    transition: color 0.3s ease;
+}
+
+#footer2 a:hover {
+    text-decoration: underline;
+    color: #4A69BD; /* 호버 시 파스텔 블루 */
+}
+
+.fan-notice {
+    font-size: 11px;
+    color: #777;
+    text-align: right;
+    margin: 0;
+    line-height: 1.3;
+}
