@@ -21,7 +21,7 @@
 	     WHERE
 	           USER_ID = #{userId}
 	       AND
-	       	   TRIM(USER_PWD) = #{userPwd}
+	       	   USER_PWD = #{userPwd}
 	</select>
 
 	<insert id="join"
