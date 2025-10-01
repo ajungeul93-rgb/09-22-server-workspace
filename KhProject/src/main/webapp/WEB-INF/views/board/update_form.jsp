@@ -30,13 +30,22 @@
         	<div class="form-group">
 	        	<select name="category" class="form-control">
 	        		<c:forEach items="${ category }" var="c">
-	        			<option value="${ c.categoryNo }">
+	        			<option value="${ c.categoryNo }" class="${ }">
 	        				${ c.categoryName }
 	        			</option>
 					</c:forEach>
 	        	</select>
         	</div>
 
+        	<script>
+        		$(function(){
+        			//alert("${map.board.category}");
+        			$('option').each(function(){
+        				//$(this).text().trim();
+
+        			})
+        		})
+        	</script>
 
             <div class="form-group">
                 <label for="usr">제목</label>
