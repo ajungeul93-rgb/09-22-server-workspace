@@ -39,7 +39,7 @@
         	<div class="form-group">
 	        	<select name="category" class="form-control">
                     <c:forEach items="${ category }" var="c">
-                    	<option value="10">
+                    	<option value="${ c.category }">
                         	${ c.categoryName }
                     	</option>
                     </c:forEach>
