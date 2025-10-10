@@ -71,7 +71,7 @@ public class ImageInsertController extends HttpServlet {
 			List<Attachment> files = new ArrayList();
 			// 키값 file1 ~ file4
 			for(int i = 1; i <= 4; i++) {
-				String key = "file" + 1;
+				String key = "file" + i;
 
 				// 조건검사 name속성값을 이용해서 파일이 있는가? 없는가?
 				if(multiRequest.getOriginalFileName(key) != null) {

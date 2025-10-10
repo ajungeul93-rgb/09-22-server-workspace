@@ -4,11 +4,13 @@
     <fullyQualifiedTypeName name="org.apache.ibatis.io.Resources"/>
     <fullyQualifiedTypeName name="com.kh.subway.common.Template"/>
     <fullyQualifiedTypeName name="org.apache.ibatis.session.SqlSession"/>
-    <fullyQualifiedTypeName name="javax.servlet.http.HttpSession"/>
     <fullyQualifiedTypeName name="java.sql.Date"/>
     <fullyQualifiedTypeName name="com.kh.java.common.Template"/>
     <fullyQualifiedTypeName name="com.kh.java.board.model.vo.Category"/>
-    <fullyQualifiedTypeName name="org.apache.commons.fileupload.servlet.ServletFileUpload"/>
-    <fullyQualifiedTypeName name="com.kh.java.member.model.vo.Member"/>
     <fullyQualifiedTypeName name="java.util.Date"/>
+    <fullyQualifiedTypeName name="java.io.File"/>
+    <fullyQualifiedTypeName name="org.apache.commons.fileupload.servlet.ServletFileUpload"/>
+    <fullyQualifiedTypeName name="javax.servlet.http.HttpSession"/>
+    <fullyQualifiedTypeName name="com.kh.java.member.model.vo.Member"/>
+    <fullyQualifiedTypeName name="com.kh.java.board.model.vo.Board"/>
 </qualifiedTypeNameHistroy>
