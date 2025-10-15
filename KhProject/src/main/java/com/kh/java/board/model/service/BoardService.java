@@ -12,6 +12,7 @@ import com.kh.java.board.model.dto.ImageBoardDto;
 import com.kh.java.board.model.vo.Attachment;
 import com.kh.java.board.model.vo.Board;
 import com.kh.java.board.model.vo.Category;
+import com.kh.java.board.model.vo.Reply;
 import com.kh.java.common.Template;
 import com.kh.java.common.vo.PageInfo;
 
@@ -266,6 +267,32 @@ public class BoardService {
 		}
 
 		return null;
+	}
+
+	public int insertReply(Reply reply) {
+
+		SqlSession sqlSession = Template.getSqlSession();
+
+		int result = bd.insertReply(sqlSession, reply);
+
+		if(result > 0) {
+			sqlSession.commit();
+		}
+
+		sqlSession.close();
+
+		return result;
+	}
+
+	public List<Reply> selectReply(Long boardNo) {
+
+		SqlSession sqlSession = Template.getSqlSession();
+
+		List<Reply> reply = bd.selectReply(sqlSession, boardNo);
+
+		sqlSession.close();
+
+		return reply;
 	}
 
 }
