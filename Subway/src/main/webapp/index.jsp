@@ -17,7 +17,7 @@
             margin : 0px;
             padding : 0px;
             color:blanchedalmond;
-        }
+        } 
 
         #img{
             display: none;

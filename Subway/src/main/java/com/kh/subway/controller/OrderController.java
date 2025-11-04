@@ -24,9 +24,9 @@ public class OrderController extends HttpServlet {
 			throws ServletException, IOException {
 
 		// 0) 요청 전송 방식이 뭐지?
-		// GET / POST
+		// GET / POST 
 
-		// 1) 요청 시 전달값이 있는가?
+		// 1) 요청 시 전달값이 있는가?  
 		// => 값 뽑기
 		// request.getParameter("키값")
 		// request.getParameterValue("키캆")
